@@ -8,11 +8,6 @@ Permite simular três tipos de falta:
 - **Duas fases (LL)**
 - **Fase-Terra (LG)**
 
-## 📸 Captura de Tela
-
-*(adicione aqui um print do app rodando no celular ou no simulador)*
-
----
 
 ## 📦 Funcionalidades
 
