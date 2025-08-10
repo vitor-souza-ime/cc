@@ -67,13 +67,13 @@ export default function App() {
     let Icc_A = 0;
 
     if (tipo === "LLL") {
-      // I = Vll / (sqrt(3) * Z1)
+      // Falta Trifásica: I = Vll / (sqrt(3) * Z1)
       Icc_A = Vll / (sqrt3 * Z1);
     } else if (tipo === "LL") {
-      // I = sqrt(3)*Vll / (Z1 + Z2)
-      Icc_A = (sqrt3 * Vll) / (Z1 + Z2);
+      // Falta Bifásica: I = (√3/2) * Vll / (Z1 + Z2) = Vll / (2 * (Z1 + Z2) / √3)
+      Icc_A = Vll / (2 * (Z1 + Z2) / sqrt3);
     } else if (tipo === "LG") {
-      // I = sqrt(3)*Vll / (Z1 + Z2 + Z0)
+      // Falta Fase-Terra: I = 3 * Vf / (Z1 + Z2 + Z0) = √3 * Vll / (Z1 + Z2 + Z0)
       Icc_A = (sqrt3 * Vll) / (Z1 + Z2 + Z0);
     }
 
